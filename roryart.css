@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    height: 100px;
+    line-height: 40px;
+    display: flex;
+}
+
+.logo img{
+    padding-left: 20px;
+    height: 105px;
+    width: 139px;
+    display: inline;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+}
+
+.menu ul li {
+    padding-top: 26px;
+    padding-right: 10px;
+    list-style: none;
+    background-color: white;
+}
+
+.menu a {
+    position: relative;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 3px 15px;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #a6051a;
+    transition: all 0.4s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu a.active::after {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #a6051a;
+    border-right: 2px solid #a6051a;
+    border-bottom-right-radius: 12px;
+    background-color: transparent;
+}
+
+.penjelasan{
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+.penjelasan-inner{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.penjelasan h1{
+    color: #734f9a;
+    font-size: 72px;
+}
+
+.penjelasan h4{
+    padding-top: 20px;
+    text-align: center;
+    flex-direction: row;
+    height: 200px;
+    font-size: 20px;
+}
+
+.artis-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.artis-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.artkiri img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.artkiri p{
+    text-align: justify;
+}
+
+.artkanan h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.artkanan a{
+    padding-left: 10px;
+    color: #a6051a;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.artkanan a:hover{
+    color: #01796f;
+    transform: scale(1.4);
+}
+
+.lagu {
+    width: 800px;
+    border-collapse: collapse;
+}
+
+.lagu th, .lagu td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.lagu th:nth-child(1){
+    text-align: left;
+}
+
+.lagu th:nth-child(2), .lagu td:nth-child(2) {
+    text-align: right;
+}
+
+.lagu td:first-child:hover {
+    color: #01796f;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #f9f940;
+}

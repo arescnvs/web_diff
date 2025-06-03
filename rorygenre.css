@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    height: 100px;
+    line-height: 40px;
+    display: flex;
+}
+
+.logo img{
+    padding-left: 20px;
+    height: 105px;
+    width: 139px;
+    display: inline;
+}
+
+.menu ul {
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+}
+
+.menu ul li {
+    padding-top: 26px;
+    padding-right: 10px;
+    list-style: none;
+    background-color: white;
+}
+
+.menu a {
+    position: relative;
+    margin-left: 15px;
+    text-decoration: none;
+    padding: 3px 15px;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    display: inline-block;
+}
+
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #a6051a;
+    transition: all 0.4s ease;
+}
+
+.menu a:hover::after {
+    width: 100%;
+}
+
+.menu a.active::after {
+    width: 100%;
+    height: 30px;
+    border-bottom: 2px solid #a6051a;
+    border-right: 2px solid #a6051a;
+    border-bottom-right-radius: 12px;
+    background-color: transparent;
+}
+
+.penjelasan{
+    width: 100%;
+    color: black;
+    background-color: white;
+}
+
+.penjelasan-inner{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+
+.penjelasan h1{
+    color: #734f9a;
+    font-size: 72px;
+}
+
+.penjelasan h4{
+    padding-top: 20px;
+    text-align: center;
+    flex-direction: row;
+    height: 200px;
+    font-size: 20px;
+}
+
+.genre{
+    width: 100%;
+    color: black;
+    background-color: #01796f;
+}
+
+.genre-inner{
+    max-width: 1000px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.genre-inner h1{
+    text-align: center;
+    font-size: 72px;
+    color: white;
+}
+
+.gecard{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    transition: transform 0.2s ease;
+}
+
+.gecard a{
+    text-decoration: none;
+    color: white;
+}
+
+.genre1{
+    padding: 120px 25px 25px 25px;
+    margin-right: 50px;
+    background: linear-gradient(135deg, #ff6a00 0%, #ee0979 100%);
+    border-radius: 8px;
+    width: 250px;
+    height: 300px;
+    margin-left: 37px;
+}
+
+.genre2{
+    padding: 120px 25px 25px 25px;
+    margin-right: 50px;
+    background: linear-gradient(135deg, #0062e6 0%, #33a1fd 100%);
+    border-radius: 8px;
+    width: 250px;
+    height: 300px;
+    margin-left: 37px;
+}
+
+.genre3{
+    padding: 120px 25px 25px 25px;
+    background: linear-gradient(to right, #800000, #2c2c2c);
+    border-radius: 8px;
+    width: 250px;
+    height: 300px;
+    margin-left: 37px;
+}
+
+.genre1:hover, .genre2:hover, .genre3:hover{
+    transform: scale(0.9);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #f9f940;
+}
